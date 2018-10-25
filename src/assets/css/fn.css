@@ -1,0 +1,20 @@
+:root {
+	/* 文字溢出隐藏 */
+	--text-of: {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;	   
+	}
+
+	/* 清除浮云 */
+	--fn-clear:{
+		zoom: 1;
+		&:after{
+			display: block;
+			visibility: hidden;
+			clear: both;
+			height: 0;
+			content: '.';
+		}
+	}
+}
